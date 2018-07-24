@@ -15,6 +15,7 @@ pipeline {
 
     stage('test') {
       steps {
+        sh 'pwd'
         sh 'echo "begin a test"'
       }
     }
