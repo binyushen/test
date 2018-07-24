@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'python --version'
+        sh 'make'
       }
     }
 
     stage('run') {
       steps {
-        sh 'echo "now is runing a pipeline"'
+        sh './'
       }
     }
 
